@@ -53,7 +53,7 @@ function validate(){
     } 
     
     if(document.myForm.semester.value == "-1"){
-        document.getElementById("semErr").innerHTML="Please choose your semester";
+        document.getElementById("semErr").innerHTML="Please choose your Semester";
         return false;
     }
 
