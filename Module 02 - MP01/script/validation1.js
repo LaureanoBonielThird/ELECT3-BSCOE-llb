@@ -79,7 +79,8 @@ function validate(){
             document.getElementById("unitsErr").innerHTML="Please enter your Total Number of Units";
             document.myForm.units.focus();
             return false;
-        } else {
+        } 
+        else {
             var num = document.myForm.units.value;
             if(isNaN(num)){
             alert("Please enter numeric values");
