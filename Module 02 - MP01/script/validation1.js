@@ -46,11 +46,10 @@ function validate(){
         }
     }
 
-    if(document.myForm.schoolyear.value =="") {
-        document.getElementById("schoolyearErr").innerHTML="Please enter your School Year";
-        document.myForm.schoolyear.focus();
-          return false;
-    } 
+    if(document.myForm.schoolyear.value == "-1"){
+        document.getElementById("schoolyearErr").innerHTML="Please choose your School Year";
+        return false;
+    }
     
     if(document.myForm.semester.value == "-1"){
         document.getElementById("semErr").innerHTML="Please choose your Semester";
