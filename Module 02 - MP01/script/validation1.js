@@ -14,10 +14,8 @@ function validate(){
         return false;
     }
 
-   
     if(document.myForm.gender.value == ""){
         document.getElementById("genderErr").innerHTML="Please choose a gender";
-        document.myForm.gender.focus();
         return false;
     }
     
