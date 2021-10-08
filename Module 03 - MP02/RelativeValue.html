@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Relative Method</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+<style>
+
+.box{
+    width: 150px;
+    height: 70px;
+    background: #f78c00;
+    margin-top: 30px;
+    border-width: 80px;
+    border-style: solid;
+    border-color: blue;
+    position: relative;
+}
+
+</style>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".box").animate({
+            top: "+=25px",
+            left: "+=25px",
+            width: "+=80px",
+            height: "+=90px"
+            
+        
+        });
+    });
+});
+
+
+</script>
+
+</head>
+
+<body>
+  <button type="button" class="btn btn-info">Animate</button>
+  <div class="box"></div>
+</body>
+
+</html>
